@@ -42,7 +42,10 @@ elif select == 3:
                     multiply(number_1, number_2))
  
 elif select == 4:
-    print(number_1, "/", number_2, "=",
+    if (number_2 != 0):
+        print(number_1, "/", number_2, "=",
                     divide(number_1, number_2))
+    else:
+        print('Division by zero is not allowed')
 else:
     print("Invalid input")
